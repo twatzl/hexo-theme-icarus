@@ -1,3 +1,10 @@
+lang: 'en'
+menu:
+    home: 'Home'
+    archives: 'Archive'
+    categories: 'Categories'
+    tags: 'Tags'
+    about: 'About'
 common:
     archive:
         one: 'Archive'
@@ -45,3 +52,4 @@ insight:
     categories: 'Categories'
     tags: 'Tags'
     untitled: '(Untitled)'
+language: 'Language'

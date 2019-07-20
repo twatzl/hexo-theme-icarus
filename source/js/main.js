@@ -1,4 +1,4 @@
-(function ($) {
+(function($){
     $('.article img:not(".not-gallery-item")').each(function () {
         // wrap images with link and add caption if possible
         if ($(this).parent('a').length === 0) {
@@ -9,9 +9,11 @@
         }
     });
 
-    if (typeof (moment) === 'function') {
+    if (typeof(moment) === 'function') {
         $('.article-meta time').each(function () {
-            $(this).text(moment($(this).attr('datetime')).fromNow());
+            let m = moment($(this).attr('datetime'));
+            m.locale($(this).attr('lang'))
+            $(this).text(m.fromNow());
         });
     }
 

@@ -79,7 +79,9 @@ img.thumbnail
 
 .navbar-main
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05)
-    .navbar-menu,
+    .navbar-menu
+        overflow-x: visible
+        overflow-y: visible
     .navbar-start,
     .navbar-end
         align-items: stretch
@@ -89,7 +91,7 @@ img.thumbnail
     .navbar-menu
         flex-grow: 1
         flex-shrink: 0
-        overflow-x: auto
+        overflow-x: visible
     .navbar-start
         justify-content: flex-start
         margin-right: auto

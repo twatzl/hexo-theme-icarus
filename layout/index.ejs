@@ -1,5 +1,7 @@
 <% page.posts.each(function(post){ %>
+    <% if (!post.lang || post.lang == __('lang')) { %>
     <%- partial('common/article', { post, index: true }) %>
+    <% } %>
 <% }); %>
 <% if (page.total > 1) { %>
     <%- partial('common/paginator') %>

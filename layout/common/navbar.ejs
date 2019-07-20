@@ -1,7 +1,7 @@
 <nav class="navbar navbar-main">
     <div class="container">
         <div class="navbar-brand is-flex-center">
-            <a class="navbar-item navbar-logo" href="<%- url_for('/') %>">
+            <a class="navbar-item navbar-logo" href="<%- url_for_lang('/') %>">
             <% if (has_config('logo.text') && get_config('logo.text')) { %>
                 <%= get_config('logo.text') %>
             <% } else { %>
@@ -14,7 +14,7 @@
             <div class="navbar-start">
                 <% for (let i in get_config('navbar.menu')) { let menu = get_config('navbar.menu')[i]; %>
                 <a class="navbar-item<% if (typeof(page.path) !== 'undefined' && is_same_link(menu, page.path)) { %> is-active<% } %>"
-                href="<%- url_for(menu) %>"><%= i %></a>
+                href="<%- url_for_lang(menu) %>"><%= __(i) %></a>
                 <% } %>
             </div>
             <% } %>
@@ -23,7 +23,7 @@
                     <% let links = get_config('navbar.links'); %>
                     <% for (let name in links) {
                             let link = links[name]; %>
-                    <a class="navbar-item" target="_blank" title="<%= name %>" href="<%= url_for(typeof(link) === 'string' ? link : link.url) %>">
+                    <a class="navbar-item" target="_blank" title="<%= name %>" href="<%= url_for_lang(typeof(link) === 'string' ? link : link.url) %>">
                         <% if (typeof(link) === 'string') { %>
                         <%= name %>
                         <% } else { %>
@@ -42,6 +42,16 @@
                     <i class="fas fa-search"></i>
                 </a>
                 <% } %>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span><%= __('language') %></span>
+                </a>
+                <div class="navbar-dropdown">
+                    <a class="dropdown-item" href="<%= switch_lang('en') %>">English</a>
+                    <a class="dropdown-item" href="<%= switch_lang('de-AT') %>">Deutsch</a>
+                </div>
             </div>
         </div>
     </div>

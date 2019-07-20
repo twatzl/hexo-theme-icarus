@@ -1,0 +1,55 @@
+lang: 'de-AT'
+menu:
+    home: 'Startseite'
+    archives: 'Archiv'
+    categories: 'Kategorien'
+    tags: 'Tags'
+    about: 'Über den Autor'
+common:
+    archive:
+        one: 'Archiv'
+        other: 'Archive'
+    category:
+        one: 'Kategorie'
+        other: 'Kategorien'
+    tag:
+        one: 'Tag'
+        other: 'Tags'
+    post:
+        one: 'Post'
+        other: 'Posts'
+    prev: 'Zurück'
+    next: 'Weiter'
+widget:
+    follow: 'Follow'
+    recents: 'Neueste Posts'
+    links: 'Links'
+    tag_cloud: 'Tag Cloud'
+    catalogue: 'Catalogue'
+article:
+    more: 'Weiterlesen'
+    comments: 'Kommentare'
+    read: 'lesen'
+    about: 'Über'
+    words: 'Wörter'
+donate:
+    title: 'Der Artikel gefällt dir? Unterstütze den Autor mit'
+    alipay: 'Alipay'
+    wechat: 'Wechat'
+    paypal: 'Paypal'
+    patreon: 'Patreon'
+plugin:
+    backtotop: 'Zurück nach oben'
+    visit: '%s besuche'
+    visitor: 'Besucht von %s Benutzern'
+search:
+    search: 'Suche'
+    hint: 'Text eingeben...'
+insight:
+    hint: 'Text eingeben...'
+    posts: 'Posts'
+    pages: 'Pages'
+    categories: 'Categories'
+    tags: 'Tags'
+    untitled: '(Untitled)'
+language: Sprache
